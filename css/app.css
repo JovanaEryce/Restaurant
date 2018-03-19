@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:500");
+.container__top {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto; }
 
+header {
+  background-color: black; }
+  header .header__wrapper {
+    color: white;
+    border-bottom: 1px solid gray; }
+
+.header__top--contact > ul {
+  margin-bottom: 0;
+  display: flex;
+  padding: 1rem 1rem 1rem; }
+  .header__top--contact > ul > li {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    padding-right: 1.5rem; }
+
+.header__top--social > ul {
+  margin-bottom: 0;
+  display: flex;
+  padding: 1rem 1rem 1rem; }
+  .header__top--social > ul > li {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    padding-right: 1.5rem;
+    list-style: none; }
+
+.header__menu .brand > img {
+  padding: 1rem; }
+.header__menu .header__menu--content > ul {
+  display: flex;
+  padding-top: 2rem; }
+  .header__menu .header__menu--content > ul li {
+    padding-right: 1rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    list-style: none; }
+    .header__menu .header__menu--content > ul li a {
+      color: white; }
+      .header__menu .header__menu--content > ul li a:hover {
+        color: firebrick; }
+  .header__menu .header__menu--content > ul .vl {
+    border-right: 1px solid gray;
+    height: 1.5rem; }
+
+ul.submenu {
+  background-color: black;
+  border: none; }
+  ul.submenu li {
+    border-bottom: 1px solid gray; }
+  ul.submenua {
+    color: gray !important; }
+
+.content {
+  height: 100vh; }
+  .content .sidebar {
+    background-image: url(../img/homepage-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; }
+
+.big__title {
+  text-align: center;
+  padding-top: 10rem; }
+
+h1 {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase; }
+
+.subtitle {
+  text-align: center; }
+  .subtitle p {
+    color: white;
+    font-family: "Roboto", sans-serif; }
+
+.buttons button {
+  background: red;
+  padding: 1rem; }
 
 /*# sourceMappingURL=app.css.map */
