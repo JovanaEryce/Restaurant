@@ -1,5 +1,48 @@
+@import '_vars.scss';
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+h1{
+    font-family: $title-font;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    font-family: $title-font;
+    font-size: 1.5rem;
+    color:#3d3d3d;
+    font-weight: 700;
+    line-height: 4;
+}
+
+h4 {
+    font-family: $content-font;
+    font-size: 4rem;
+    color: rgb(159, 167, 166);
+}
+
+h5 {
+    font-family: $content-font;
+    font-size: 1rem;
+    color: rgb(159, 167, 166);
+}
+
+p {
+    font-family: $content-font;
+    font-size: 1rem;
+    text-align: justify;
 }

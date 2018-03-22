@@ -10,147 +10,550 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <!--Parallax-->
-    <div class="parallax">
-      <!--Container Top -->
-      <div class="container__top">
-        <!--Header Start-->
-        <header>
-          <!--Header Wrapper-->
-          <div class="row align-center header__wrapper">
-            <div class="column medium-8 large-8 header__top--contact">
-              <ul>
-                <li><span>79 District 1, HCM City, Vietnam</span></li>
-                <li><span>(+84) 123 456 789</span></li>
-                <li><span>07:30 am - 11:00 pm</span></li>
-              </ul>
-            </div>
-            <div class="column medium-4 large-4 header__top--social">
-              <ul>
-                <li><i class="fa fa-facebook" title="Facebook"></i></li>
-                <li><i class="fa fa-twitter" title="Twitter"></i></li>
-                <li><i class="fa fa-pinterest-p"></i></li>
-                <li><i class="fa fa-youtube"></i></li>
-                <li><i class="fa fa-instagram"></i></li>
-              </ul>
-            </div>
-          </div>
-          <!--Header Wrapper End-->
-          <!--Header Menu-->
-          <div class="row align-center header__menu">
-            <!--Brand Logo -->
-            <div class="column medium-6 large-4 brand">
-              <img src="img/gamba.png" alt="Gamba restaurant"/>
-            </div><!--Brand Logo End-->
-            <!--Menu content-->
-            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-              </div>
-              
-            <div class="top-bar" id="example-menu">
-                <div class="top-bar-left header__menu--content">
-                  <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="has-submenu is-active">
-                      <a href="#0">Home</a>
-                    <ul class="submenu menu vertical" data-submenu>
-                      <li><a href="#0">Homepage1</a></li>
-                      <li><a href="#0">Homepage2</a></li>
-                      <li><a href="#0">Homepage3</a></li>
-                      <li><a href="#0">Home Product</a></li>
-                    </ul>
-                    </li>
-                    <li class="has-submenu">
-                      <a href="#0">Pages</a>
-                      <ul class="submenu menu vertical" data-submenu>
-                        <li class="menu-text">Features pages</li>
-                        <li><a href="#0">About 1</a></li>
-                        <li><a href="#0">About 2</a></li>
-                        <li><a href="#0">Menu grid 1</a></li>
-                        <li><a href="#0">Menu grid 2</a></li>
-                     <ul class="submenu menu vertical" data-submenu>
-                        <li class="menu-text">Other pages</li>
-                        <li><a href="#0">Page Events</a></li>
-                        <li><a href="#0">404 Page Error</a></li>
-                      </ul>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#0">Reservation</a>
-                      <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">Reservation</a></li>
-                        <li><a href="#">Open Table Plugin</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#0">Menu</a>
-                      <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">Menu Grid 1</a></li>
-                        <li><a href="#">Menu Grid 2</a></li>
-                      </ul>
-                    </li>
-                     <li>
-                      <a href="#0">Shop</a>
-                      <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Checkout</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#0">Blog</a>
-                      <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">Blog Clasic</a></li>
-                        <li><a href="#">Blog Grid</a></li>
-                        <li><a href="#">Blog Single</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+    
+
+    <div class="main">
+      <header class="header">
+        <div class="header__top">
+          <div class="centered__content">
+              <div class="grid-x align-justify">
+                <div class="cell medium-6">
+                    <div class="grid-x header__top--contact">
+                        <ul>
+                          <li><span>79 District 1, HCM City, Vietnam</span></li>
+                          <li><span>(+84) 123 456 789</span></li>
+                          <li><span>07:30 am - 11:00 pm</span></li>
+                        </ul>
+                      </div>
                 </div>
-                  <!--icon - shop search-->
-                  <div>
-                      <ul class="icon__shop">
-                        <li class="border__li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
-                      </ul>
-                    </ul>
+                <div class="cell medium-4">
+                    <div class="grid-x align-right header__top--social">
+                          <ul>
+                            <li><i class="fa fa-facebook" title="Facebook"></i></li>
+                            <li><i class="fa fa-twitter" title="Twitter"></i></li>
+                            <li><i class="fa fa-pinterest-p"></i></li>
+                            <li><i class="fa fa-youtube"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                          </ul>
                     </div>
+                </div>
               </div>
-            
-            
-            </div><!--Example menu End-->
-            </div><!--Menu Content End-->
-         </header><!--Header End-->
-        
-        <!--Content-->
-        <div class="large-12 cell content">
-        <!--Sidebar-->
-          <div class="sidebar">
+          </div>
+        </div>
+        <div class="header__bottom">
+            <div class="centered__content">
+              <div class="grid-x align-justify">
+                <div class="cell medium-2">
+                  <div class="grid-x brand">
+                      <img src="img/gamba.png" alt="Gamba restaurant"/>
+                  </div>
+                </div>
+                <div class="cell medium-10">
+                  <div class="grid-x align-right">
+                      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                      </div>
+                      <!--menu-->
+                      <div class="top-bar" id="example-menu">
+                          <div class="top-bar-left header__menu--content">
+                            <ul class="dropdown menu" data-dropdown-menu>
+                              <li class="has-submenu is-active">
+                                <a href="#0">Home</a>
+                              <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#0">Homepage1</a></li>
+                                <li><a href="#0" class="a__content">Homepage2</a></li>
+                                <li><a href="#0">Homepage3</a></li>
+                                <li><a href="#0">Home Product</a></li>
+                              </ul>
+                              </li>
+                              <li class="has-submenu">
+                                <a href="#0">Pages</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                  <li class="menu-text">Features pages</li>
+                                  <li><a href="#0">About 1</a></li>
+                                  <li><a href="#0">About 2</a></li>
+                                  <li><a href="#0" class="a__content">Menu grid 1</a></li>
+                                  <li><a href="#0">Menu grid 2</a></li>
+                               <ul class="submenu menu vertical" data-submenu>
+                                  <li class="menu-text">Other pages</li>
+                                  <li><a href="#0" class="a__content">Page Events</a></li>
+                                  <li><a href="#0">404 Page Error</a></li>
+                                </ul>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#" class="a__content">Reservation</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                  <li><a href="#">Reservation</a></li>
+                                  <li><a href="#">Open Table Plugin</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Menu</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                  <li><a href="#" class="a__content">Menu Grid 1</a></li>
+                                  <li><a href="#">Menu Grid 2</a></li>
+                                </ul>
+                              </li>
+                               <li>
+                                <a href="#">Shop</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                  <li><a href="#">My Account</a></li>
+                                  <li><a href="#" class="a__content">Cart</a></li>
+                                  <li><a href="#">Checkout</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Blog</a>
+                                <ul class="submenu menu vertical" data-submenu>
+                                  <li><a href="#">Blog Clasic</a></li>
+                                  <li><a href="#" class="a__content">Blog Grid</a></li>
+                                  <li><a href="#">Blog Single</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" class="a__content">Contact</a></li>
+                            </ul>
+                          </div>
+                            <!--icon - shop search-->
+                            <div>
+                                <ul class="icon__shop">
+                                  <li class="border__li"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                                  <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                                </ul>
+                              </ul>
+                              </div>
+                              </div>
+                        </div>
+                      </div><!--Example menu End-->
+                    </div>
+                    </div>
+            </header>
+      <section class="banner">
+        <div class="grid-x align-center">
+          <div class="cell medium-10">
             <div class="big__title">
-              <h1>Welcome to Gamba restaurant</h1>
+                <h1>Welcome to Gamba restaurant</h1>
             </div>
             <div class="subtitle">
-              <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year. We actively seek out the freshest in <br/>
-                regional seafood and produce our restaurant.  </p>
+                <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year. We actively seek out the freshest in <br/>
+                  regional seafood and produce our restaurant.</p>
             </div>
             <div class="buttons">
-              <button class="button__reserve">Resever now</button>
-              <button class="button__purchase">Purchase now</button>
-            </div>    
-        </div><!--Sidebar End-->
-        <!--About Us Start-->
-        <div class="section about">
-          <div class="column medium-6 large-4 about__img"></div>
-          <div class="column medium-6 large-8 about__content">
-            <div class="section__separator"></div>
-            <div class="section__image--title"></div>
-            <div class="section__title">
-              <h2>About us</h2>
+                <button class="button__reserve">Resever now</button>
+                <button class="button__purchase">Purchase now</button>
             </div>
           </div>
         </div>
-      </div><!--Content End-->
-    </div><!--Parallax End-->
+      </section><!--Section Banner End -->
+      <!--About-->
+      <section class="about">
+        <div class="grid-x align-justify">
+          <div class="cell medium-4 small-12 large-4" style="position: relative;">
+            <div class="about__img"></div>
+          </div>
+          <div class="cell medium-8 small-12 large-8">
+            <div class="title__wrapper align-center">
+              <div class="section__about--title">
+                <h2>About us</h2>
+                <div class="section__about--bg">
+                  <img src="img/crawfish.png" alt="">
+                </div>
+              </div>
+              <div class="section__text--content">
+                      <p>Gamba Restaurant, a beacon of good Straits cooking, continues to draw people from all over town to NW6. The upmarket dining room, decked out with patterned banquettes, wooden flooring and crisp white linen, displays few hints of the restaurant’s oriental bent...</p>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udan tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. Excepteur cat cupidatat non proident, sunt in culpa qui officia deserunt sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorque.</p> 
+                      <div class="signature">
+                        <p>CEO - WILIAM GAMBA</p>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--Section About End-->
+      <!--Section Special Menu-->
+      <section class="special__menu">
+        <div class="centered__content">
+          <div class="special__menu--title">
+            <h2>Special menu</h2>
+          </div>
+          <div class="grid-x align-justify grid-margin-x">
+                <div class="medium-4 large-4 small-12 cell special__menu--box">
+                  <div class="menu__box--border">
+                    <div class="box__wrapper">
+                      <div class="box__title">
+                        <h3>Crawfish Dishs</h3>
+                      </div>
+                      <div class="box__img">
+                        <img src="img/crawfish.png" class="front__img"/>
+                        <img src="img/crawfish-4.png" class="back__img"/>
+                      </div>
+                      <div class="box__star">
+                        <span class="empty__star"></span>
+                        <span class="full-star"></span>
+                      </div>
+                      <div class="box__price align-center">
+                        <span style="display:inline-flex"><h4><sup>$</sup>58</h4>
+                        <span class="per__kg"><h5>/ kg</h5></span>
+                      </span>
+                      </div>
+                      <div class="box__button">
+                          <a href="#" class="button">Full dishes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="medium-4 large-4 small-12 cell special__menu--box">
+                    <div class="menu__box--border">
+                        <div class="box__wrapper">
+                          <div class="box__title">
+                            <h3>Crawfish Dishs</h3>
+                          </div>
+                          <div class="box__img">
+                            <img src="img/kingcrab.png" class="front__img"/>
+                            <img src="img/kingcrab-4.png" class="back__img"/>
+                          </div>
+                          <div class="box__star">
+                            <span class="empty__star"></span>
+                            <span class="full-star"></span>
+                          </div>
+                          <div class="box__price align-center">
+                            <span style="display:inline-flex"><h4><sup>$</sup>58</h4>
+                            <span class="per__kg"><h5>/ kg</h5></span>
+                          </span>
+                          </div>
+                          <div class="box__button">
+                              <a href="#" class="button">Full dishes</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="medium-4 large-4 small-12 cell ofset-2 special__menu--box">
+                    <div class="menu__box--border">
+                        <div class="box__wrapper">
+                          <div class="box__title">
+                            <h3>Crawfish Dishs</h3>
+                          </div>
+                          <div class="box__img">
+                            <img src="img/clamp.png" class="front__img"/>
+                            <img src="img/clamp-4.png" class="back__img"/>
+                          </div>
+                          <div class="box__star">
+                            <span class="empty__star"></span>
+                            <span class="full-star"></span>
+                          </div>
+                          <div class="box__price align-center">
+                            <span style="display:inline-flex"><h4><sup>$</sup>58</h4>
+                            <span class="per__kg"><h5>/ kg</h5></span>
+                          </span>
+                          </div>
+                          <div class="box__button">
+                              <a href="#" class="button">Full dishes</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </section>
+      <!--Menu Of The Day-->
+      <section class="menu__day">
+        <div class="grid-x align-justify">
+          <div class="cell medium-4 large-4 small-12" style="position: relative;">
+            <div class="menu__day--img"></div>
+          </div>
+          <div class="cell medium-8 medium-6 small-12 menu__day--content" >
+            <div class="title__wrapper align-center small-12">
+              <div class="section__about--title">
+                <h2>Menu of the day</h2>
+                <div class="section__about--bg">
+                  <img src="img/kingcrab.png" alt="king-crab">
+                </div>
+              </div>
+            <div class="menu__day--tabs">
+                <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                    <li class="tabs-title is-active"><a href="#tab1" aria-selected="true"><i class="fa fa-birthday-cake"></i>Deserts</a></li>
+                    <li class="tabs-title"><a href="#tab2"><i class="fa fa-bookmark"></i>Disher</a></li>
+                    <li class="tabs-title"><a href="#tab3"><i class="fa fa-coffee"></i>Drinks</a></li>
+                    <li class="tabs-title"><a href="#tab4"><i class="fa fa-beer"></i>Starters</a></li>
+                  </ul>
+                  
+                  <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                    <div class="tabs-panel is-active" id="tab1">
+                      <div class="tabs__wrapper">
+                        <div class="grid-x align-jusify">
+                          <div class="cell medium-6 tabs__p--style">
+                              <div class="box__price align-justify">
+                                  <a href="#">Seafood Spaghetti</a>
+                                  <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                </span>
+                                </div>
+                            
+                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          </div>
+                          <div class="cell medium-6 tabs__p--style">
+                              <div class="box__price align-justify">
+                                  <a href="#">Salmon Wraps Cheese</a>
+                                  <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                </span>
+                                </div>
+                            
+                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs__wrapper">
+                          <div class="grid-x align-jusify">
+                            <div class="cell medium-6 tabs__p--style">
+                                <div class="box__price align-justify">
+                                    <a href="#">Seafood Ramen</a>
+                                    <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                  </span>
+                                  </div>
+                              
+                              <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                            </div>
+                            <div class="cell medium-6 tabs__p--style">
+                                <div class="box__price align-justify">
+                                    <a href="#">Salmon Or Hake Fillet</a>
+                                    <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                  </span>
+                                  </div>
+                              
+                              <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    <div class="tabs-panel" id="tab2">
+                        <div class="tabs__wrapper">
+                            <div class="grid-x align-jusify">
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Tequila & Lime Hake</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Madeira Herrings</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tabs__wrapper">
+                              <div class="grid-x align-jusify">
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">Scottish Rope-Grown Mussels</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">Fish And Chips</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="tabs-panel" id="tab3">
+                        <div class="tabs__wrapper">
+                            <div class="grid-x align-jusify">
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Salt And Pepper Squid</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Langoustine & Salmon Ravioli</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tabs__wrapper">
+                              <div class="grid-x align-jusify">
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">King Prawn Spaghetti</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">Tequila & Lime Oysters</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="tabs-panel" id="tab4">
+                        <div class="tabs__wrapper">
+                            <div class="grid-x align-jusify">
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Lobster ‘Mac & Cheese’</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                              <div class="cell medium-6 tabs__p--style">
+                                  <div class="box__price align-justify">
+                                      <a href="#">Kung Pao Pastrami</a>
+                                      <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                    </span>
+                                    </div>
+                                
+                                <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tabs__wrapper">
+                              <div class="grid-x align-jusify">
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">Lobster Surf And Turf</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                                <div class="cell medium-6 tabs__p--style">
+                                    <div class="box__price align-justify">
+                                        <a href="#">Buffet & Kimchi Salad</a>
+                                        <span style="display:inline-flex"><p><sup>$</sup>49</p>
+                                      </span>
+                                      </div>
+                                  
+                                  <p>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+      </section><!--End Section Menu Of The Day-->
+      <!--Section Red Banner-->
+      <section class="red__banner">
+        <div class="grid-x align-center">
+          <div class="cell medium-12 red__banner--title">
+            <h2>ENJOY SEAFOOD RESTAURANT TEMPLATE!</h2>
+          </div>
+          <div class="cell medium-12 red__banner--subtitle">
+            <p>The Seafood Restaurant has been voted by locals as "Best in the area" year after year. We actively seek out <br> the freshest in regional seafood and produce our restaurant is expanding.</p>
+          </div>
+          <div class="cell medium-8 red__banner--button">
+              <a href="#" class="button">Purchase Now</a>
+          </div>
+        </div>
+      </section><!--End Red Banner-->
+      <!--News Of The Day-->
+      <section class="news__day">
+        <div class="grid-x align-center">
+            <div class="title__wrapper align-center">
+                <div class="section__about--title">
+                  <h2>News of the day</h2>
+                  <div class="section__about--bg">
+                    <img src="img/cuttle.png" alt="">
+                  </div>
+                </div>
+              
+              </div>
+        </div>
+        <div class="grid-x align-justify grid-margin-x">
+          <div class="grid-x align-justify" style="display:flex; padding:2rem;">
+            <div class="cell medium-6">
+            <div class="grid-x align-justify">
+            <div class="news__date cell medium-2">
+              <div class="news__date--day">
+                <h4>14</h4>
+                <span>Sep-2016</span>
+              </div>
+            </div>
+            <div class="news__content cell medium-10">
+              <div class="news__content--title">
+                  <a href="#">Roasted salmon &amp; summer veg traybake</a>
+              </div>
+              <div class="news__content--breadcrumbs">
+                  <nav aria-label="You are here:" role="navigation">
+                      <ul class="breadcrumbs">
+                        <li><a href="#">By Gamba Studio</a></li>
+                        <li><a href="#">No comment</a></li>
+                        <li><a href="#">restaurant</a></li>
+                      </ul>
+                    </nav>
+              </div>
+              <p>
+                Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed contur.Cras mattis consectetur purus sit amet fermentum.…
+              </p>
+              <a href="#" class="button">Read more<i class="fal fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+          <div class="cell medium-6" style="position:relative;">
+            <div class="news__img"></div>
+          </div>
+          </div>
+         
+        </div>
+
+      </section><!--End News Of The Day-->
+      <!--Book Your Table-->
+      <section>
+        <div class="grid-x align-right">
+          <div class="cell medium-6 book__form">
+              <div class="title__wrapper align-center">
+                  <div class="section__about--title">
+                    <h2>Book your table</h2>
+                    <div class="section__about--bg">
+                      <img src="img/scallop.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+
+
+
+ 
   
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
