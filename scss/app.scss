@@ -166,6 +166,7 @@ ul.submenu {
         p {
             color: white;
             font-family: $content-font;
+            text-align: center;
         }
     }
 }
@@ -205,6 +206,8 @@ ul.submenu {
     text-align: center;
     position: relative;
     z-index: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .about__img{
     background-image: url(../img/banner-1.jpg);
@@ -305,8 +308,22 @@ ul.submenu {
     left: 3rem;
     display: none;
 }
+.special__menu--content{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.box__price {
+    a{
+        color:black;
+        &:hover{
+            color:red;
+        }
+    }
+}
 
-
+li.tabs-title {
+        border-right: 1px dotted grey;
+}
 /*stars*/
 
 .empty__star{
@@ -453,7 +470,7 @@ ul.tabs{
     padding-top: 2rem;
 }
 
-.red__banner--button{
+.red__button{
     text-align: center;
     padding-top: 2rem;
     >.button{
@@ -480,8 +497,6 @@ ul.tabs{
 }
 .news__day{
     background-color: white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .news__content--title{
@@ -502,7 +517,7 @@ ul.tabs{
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;   
+    left: 0;
 }
 
 .news__content{
@@ -518,11 +533,280 @@ ul.tabs{
 }
 
 /*Book Your Table*/
+.book__table{
+    .section__about--title{
+        position: relative;
+        z-index: 1;
+        &:after{
+            background-color: transparent;
+        }
+        h2{
+            color:white;
+            padding-top: 1rem;
+            font-size: 3rem;
+            z-index: 3;
+        }
+        
+    }
+}
+.section__about--bg{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+.book__section{
+    background:rgba(0, 0, 0, 0.9);
+    padding-top: 2rem;
+}
 
 .book__form{
-    background: black;
-    h2{
-        color:white;
-    }
+    padding-top: 5rem;
+}
 
+.form__controll{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    span{
+        position: relative;
+        z-index: 1;
+        i{
+            position: absolute;
+            color:  rgb(192, 189, 189);
+            top: 10px;
+            right: 0;
+            bottom: 0;
+            left: 217px; 
+            z-index: 2;
+
+        }
+    }
+}
+.black__button{
+    text-align: center;
+    padding-top: 2rem;
+    >.button{
+        background-color:red;
+        color: black;
+        text-transform: uppercase;
+        width: 12rem;
+        font-weight: 700;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid white;
+            color:white;
+        }
+    }
+}
+
+/*UPCOMING EVENT*/
+
+.upcomig__event{
+    background: white;
+    .opening__hour{
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+    }
+    .opening__hour--content{
+        background-image: url(../img/coming-soon-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2rem;
+        /*position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;*/
+        ul{
+            color: white;
+            text-align: justify
+        }
+            li{
+                list-style: none;
+            
+            & :before{
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+                width: 45%;
+            }
+        }
+        
+    }
+}
+
+.opening__hour--title{
+    h3{
+    text-align: center;
+    color: white;
+    }
+}
+
+.list__header{
+    display: block;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1;
+    position: relative;
+    span{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Roboto;
+        line-height: 27px;
+    }
+}
+
+.list__days{
+    display: block;
+    float: left;
+}
+
+.list__hours{
+    display: block;
+    float: right;
+}
+
+.open__hour--border{
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: .5rem;
+}
+
+.upcomig__event{
+    .section__about--title{
+        background-image: url(img/shrimp.png);
+        background-repeat: no-repeat;     
+    }
+    .title__wrapper{
+        padding-top: 3rem;
+    }
+}
+
+.counter__wrapper{
+    margin: 0 auto;
+    ul{
+        display: inline-flex;
+        li{
+            list-style: none;
+            border:1px solid grey;
+            padding: 2rem;
+        }
+    }
+}
+li > div.number{
+    font-size: 4rem;
+    color:grey;
+    font-weight: 700;
+}
+
+.hours{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.upcomig__event{
+    a{
+        background: red;
+        color: white;
+        width: 12rem;
+        text-transform: uppercase;
+        &:hover{
+            background: black;
+        }
+    }
+}
+
+/*Border Bottom*/
+
+.border__bottom{
+    background: red;
+    padding: 2rem;
+    a{
+        color: white;
+        cursor: pointer;
+        background: transparent;
+    }
+}
+
+.bottom__line{
+    border-bottom: 1px solid white;
+    p{
+        color:grey;
+    }
+}
+
+.border__title{
+
+    h3{
+        color: white;
+        line-height: 1;
+    }
+}
+
+.border__subtitle{
+    p{
+    color: white;
+    }
+}
+
+/*Footer*/
+
+.footer{
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__wrapper{
+        width: 100%;
+    }
+}
+
+.footer__col{
+    p{
+     color: white;
+    }
+    ul{
+        li{
+            color: white;
+            list-style: none;
+            &>.fa{
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+
+#footer1{
+    background-image: url(../img/footer-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+
+}
+
+.footer__col--title{
+    h4{
+        color:white;
+        font-size: 1rem;
+        border-bottom: 1px solid red;
+    }
 }
