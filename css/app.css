@@ -43,21 +43,14 @@ p {
   background-image: url(../img/homepage-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding-bottom: 10rem;
+  position: relative; }
 
-/*.parallax {
-    background-image: url(../img/homepage-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-.container__top {
-    display: grid;
-    max-width: 100%;
-    margin: 0 auto;   
-}*/
-/*Header*/
+/******Header******/
 header .header__wrapper {
   color: white;
   border-bottom: 1px solid gray;
@@ -102,10 +95,7 @@ header .header__menu {
   text-transform: uppercase;
   list-style: none; }
   .header__menu--content ul li a {
-    color: white;
-    /*&:hover{
-        color: firebrick;
-    }*/ }
+    color: white; }
     .header__menu--content ul li a::after {
       content: '//' !important;
       border: none !important;
@@ -118,6 +108,9 @@ a.is-active {
   color: red !important; }
 
 a:visited a:hover a:active {
+  color: red; }
+
+.dropdown.menu .is-active > a {
   color: red; }
 
 a.a__content::after {
@@ -157,10 +150,7 @@ ul.submenu {
   ul.submenua {
     color: gray !important; }
 
-/*Content*/
-/*.content {
-    height: 100vh;
-}*/
+/*******Content******/
 .banner {
   padding-top: 10rem;
   padding-bottom: 10rem; }
@@ -195,9 +185,11 @@ ul.submenu {
       -o-transition: background-color 1s ease-out;
       transition: background-color 1s ease-out; }
 
-/*About*/
+/*******About*******/
 .about {
-  background: white; }
+  background: white;
+  position: relative;
+  z-index: 0; }
 
 .title__wrapper {
   text-align: center;
@@ -227,7 +219,8 @@ ul.submenu {
 
 .section__about--title {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-bottom: 2rem; }
   .section__about--title:after {
     content: '';
     background-color: rgba(255, 255, 255, 0.4);
@@ -263,7 +256,7 @@ ul.submenu {
   padding-left: 15px;
   padding-right: 15px; }
 
-/*Special Menu Boxes*/
+/***Special Menu Boxes***/
 .special__menu--box {
   background: white;
   padding: 1rem; }
@@ -304,7 +297,10 @@ ul.submenu {
 li.tabs-title {
   border-right: 1px dotted grey; }
 
-/*stars*/
+.grid-margin-x > .small-12 {
+  margin-top: 2rem; }
+
+/***Stars***/
 .empty__star {
   display: inline-block;
   position: relative; }
@@ -335,7 +331,7 @@ li.tabs-title {
     top: 0;
     letter-spacing: 4px; }
 
-/*Price*/
+/***Price***/
 .box__star {
   line-height: 4; }
 
@@ -362,10 +358,14 @@ li.tabs-title {
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out; }
 
-/*Menu Of The Day*/
+/*******Menu Of The Day******/
+.menu__day {
+  position: relative;
+  z-index: 0; }
+
 .special__menu {
-  padding-bottom: 5rem;
-  padding-top: 5rem; }
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
 
 .menu__day--content {
   background: white;
@@ -410,7 +410,7 @@ ul.tabs {
   padding: 1rem;
   border-bottom: 1px dashed #e6e6e6; }
 
-/*Red Banner*/
+/*******Red Banner*******/
 .red__banner {
   background-color: rgba(255, 0, 0, 0.9);
   padding-top: 5rem;
@@ -439,7 +439,7 @@ ul.tabs {
       background-color: white;
       color: black; }
 
-/*News of the day*/
+/*******News of the day*******/
 .news__date {
   display: block;
   max-width: max-content;
@@ -448,7 +448,9 @@ ul.tabs {
     color: #50545c; }
 
 .news__day {
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  z-index: 0; }
 
 .news__content--title a {
   text-transform: uppercase;
@@ -473,20 +475,54 @@ ul.tabs {
     padding-right: 3rem; }
   .news__content a.button {
     background: transparent;
-    color: black;
+    color: grey;
     font-family: "Roboto", sans-serif; }
+    .news__content a.button i {
+      color: grey;
+      padding-left: 1rem; }
+      .news__content a.button i:hover {
+        color: red; }
+    .news__content a.button:hover {
+      color: red; }
 
-/*Book Your Table*/
-.book__table .section__about--title {
+.news__content--tags {
+  padding-left: 1rem; }
+  .news__content--tags span {
+    text-transform: uppercase;
+    color: grey;
+    padding-bottom: 1rem; }
+  .news__content--tags a {
+    border: 1px solid grey;
+    padding: .2rem;
+    color: grey;
+    margin-right: .5rem; }
+    .news__content--tags a:hover {
+      color: red;
+      border: 1px solid red; }
+
+.news__menu li {
+  list-style: none; }
+  .news__menu li a {
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 1rem; }
+    .news__menu li a:hover {
+      color: black; }
+
+/*******Book Your Table******/
+.book__table {
   position: relative;
-  z-index: 1; }
-  .book__table .section__about--title:after {
-    background-color: transparent; }
-  .book__table .section__about--title h2 {
-    color: white;
-    padding-top: 1rem;
-    font-size: 3rem;
-    z-index: 3; }
+  z-index: 0; }
+  .book__table .section__about--title {
+    position: relative;
+    z-index: 1; }
+    .book__table .section__about--title:after {
+      background-color: transparent; }
+    .book__table .section__about--title h2 {
+      color: white;
+      padding-top: 1rem;
+      font-size: 3rem;
+      z-index: 3; }
 
 .section__about--bg {
   z-index: 2;
@@ -515,8 +551,8 @@ ul.tabs {
       top: 10px;
       right: 0;
       bottom: 0;
-      left: 217px;
-      z-index: 2; }
+      z-index: 2;
+      padding-right: 1rem; }
 
 .black__button {
   text-align: center;
@@ -532,37 +568,33 @@ ul.tabs {
       border: 1px solid white;
       color: white; }
 
-/*UPCOMING EVENT*/
+/*******Upcoming event*******/
 .upcomig__event {
-  background: white; }
+  background: white;
+  position: relative;
+  z-index: 0;
+  padding-top: 5rem; }
   .upcomig__event .opening__hour {
-    position: relative;
-    z-index: 1;
-    padding: 2rem; }
-  .upcomig__event .opening__hour--content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background-image: url(../img/coming-soon-1.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem;
-    /*position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;*/ }
+    background-attachment: scroll;
+    background-size: cover; }
+  .upcomig__event .opening__hour--content {
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid solid solid solid;
+    border-radius: 1rem;
+    padding: 2rem; }
     .upcomig__event .opening__hour--content ul {
       color: white;
       text-align: justify; }
     .upcomig__event .opening__hour--content li {
       list-style: none; }
-      .upcomig__event .opening__hour--content li :before {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        content: '';
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
-        width: 45%; }
 
 .opening__hour--title h3 {
   text-align: center;
@@ -574,6 +606,15 @@ ul.tabs {
   font-size: 11px;
   line-height: 1;
   position: relative; }
+  .list__header:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    width: 45%; }
   .list__header span {
     color: #ffffff;
     font-size: 16px;
@@ -589,16 +630,11 @@ ul.tabs {
   display: block;
   float: right; }
 
-.open__hour--border {
-  padding: 2rem;
-  border: 1px solid white;
-  border-radius: .5rem; }
-
-.upcomig__event .section__about--title {
-  background-image: url(img/shrimp.png);
-  background-repeat: no-repeat; }
-.upcomig__event .title__wrapper {
-  padding-top: 3rem; }
+.upcomig__event--content .title__wrapper {
+  padding-top: 0; }
+  .upcomig__event--content .title__wrapper .section__about--title {
+    background-image: url(img/shrimp.png);
+    background-repeat: no-repeat; }
 
 .counter__wrapper {
   margin: 0 auto; }
@@ -606,18 +642,31 @@ ul.tabs {
     display: inline-flex; }
     .counter__wrapper ul li {
       list-style: none;
-      border: 1px solid grey;
-      padding: 2rem; }
+      padding: 2rem;
+      display: block;
+      position: relative; }
 
 li > div.number {
   font-size: 4rem;
   color: grey;
-  font-weight: 700; }
+  font-weight: 700;
+  border: 1px solid grey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: block; }
 
 .hours {
   font-size: 2rem;
   text-transform: uppercase;
   color: black; }
+
+.text__date {
+  position: relative;
+  top: -15px;
+  background: white;
+  display: inline-block; }
 
 .upcomig__event a {
   background: red;
@@ -627,7 +676,7 @@ li > div.number {
   .upcomig__event a:hover {
     background: black; }
 
-/*Border Bottom*/
+/******Border Bottom*******/
 .border__bottom {
   background: red;
   padding: 2rem; }
@@ -648,20 +697,21 @@ li > div.number {
 .border__subtitle p {
   color: white; }
 
-/*Footer*/
+/*******Footer*******/
 .footer {
   z-index: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: white; }
   .footer .footer__wrapper {
     width: 100%; }
 
@@ -684,5 +734,16 @@ li > div.number {
   color: white;
   font-size: 1rem;
   border-bottom: 1px solid red; }
+
+.copyright {
+  color: white;
+  padding-top: 1rem;
+  padding-left: 2rem; }
+
+.scrollup .fa {
+  content: "\f106";
+  font-size: 3rem;
+  background: red;
+  padding: 1rem; }
 
 /*# sourceMappingURL=app.css.map */

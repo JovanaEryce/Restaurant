@@ -12,12 +12,12 @@
   <body>
     
 
-    <div class="main">
+    <div class="main" id="top">
       <header class="header">
         <div class="header__top">
           <div class="centered__content">
               <div class="grid-x align-justify">
-                <div class="cell medium-6">
+                <div class="cell medium-6 small-12">
                     <div class="grid-x header__top--contact">
                         <ul>
                           <li><span>79 District 1, HCM City, Vietnam</span></li>
@@ -26,7 +26,7 @@
                         </ul>
                       </div>
                 </div>
-                <div class="cell medium-4">
+                <div class="cell medium-4 small-12">
                     <div class="grid-x align-right header__top--social">
                           <ul>
                             <li><i class="fa fa-facebook" title="Facebook"></i></li>
@@ -183,7 +183,7 @@
                       <div class="box__title">
                         <h3>Crawfish Dishs</h3>
                       </div>
-                      <div class="box__img">
+                      <div class="box__img1">
                         <img src="img/crawfish.png" class="front__img"/>
                         <img src="img/crawfish-4.png" class="back__img"/>
                       </div>
@@ -208,7 +208,7 @@
                           <div class="box__title">
                             <h3>Crawfish Dishs</h3>
                           </div>
-                          <div class="box__img">
+                          <div class="box__img2">
                             <img src="img/kingcrab.png" class="front__img"/>
                             <img src="img/kingcrab-4.png" class="back__img"/>
                           </div>
@@ -226,14 +226,14 @@
                           </div>
                         </div>
                       </div>
-                </div>
+                    </div>
                 <div class="medium-4 large-4 small-12 cell ofset-2 special__menu--box">
                     <div class="menu__box--border">
                         <div class="box__wrapper">
                           <div class="box__title">
                             <h3>Crawfish Dishs</h3>
                           </div>
-                          <div class="box__img">
+                          <div class="box__img3">
                             <img src="img/clamp.png" class="front__img"/>
                             <img src="img/clamp-4.png" class="back__img"/>
                           </div>
@@ -492,7 +492,6 @@
                     <img src="img/cuttle.png" alt="">
                   </div>
                 </div>
-              
               </div>
         </div>
         <div class="grid-x align-justify grid-margin-x">
@@ -505,34 +504,50 @@
                 <span>Sep-2016</span>
               </div>
             </div>
-            <div class="news__content cell medium-10">
-              <div class="news__content--title">
-                  <a href="#">Roasted salmon &amp; summer veg traybake</a>
+            <div class="news__content cell medium-10" data-magellan-target="first" id="first">
+                <div class="news__content--title">
+                    <a href="#">Roasted salmon &amp; summer veg traybake</a>
+                </div>
+                <div class="news__content--breadcrumbs">
+                    <nav aria-label="You are here:" role="navigation">
+                        <ul class="breadcrumbs">
+                          <li><a href="#">By Gamba Studio</a></li>
+                          <li><a href="#">No comment</a></li>
+                          <li><a href="#">restaurant</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <p>
+                  Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed contur.Cras mattis consectetur purus sit amet fermentum.…
+                </p>
+                <a href="#" class="button">Read more<i class="fa fa-arrow-right"></i></a>
+                <div class="news__content--tags">
+                  <span>Tags:</span>
+                    <a href="#first">food</a>
+                    <a href="#second">healthy</a>
+                    <a href="#third">restaurant</a>
+                    <a href="#fourth">salmon</a>
+                </div>
               </div>
-              <div class="news__content--breadcrumbs">
-                  <nav aria-label="You are here:" role="navigation">
-                      <ul class="breadcrumbs">
-                        <li><a href="#">By Gamba Studio</a></li>
-                        <li><a href="#">No comment</a></li>
-                        <li><a href="#">restaurant</a></li>
-                      </ul>
-                    </nav>
-              </div>
-              <p>
-                Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed contur.Cras mattis consectetur purus sit amet fermentum.…
-              </p>
-              <a href="#" class="button">Read more<i class="fal fa-arrow-right"></i></a>
-            </div>
           </div>
         </div>
-          <div class="cell medium-6" style="position:relative;">
-            <div class="news__img"></div>
+        <div class="cell medium-6" style="position:relative;">
+          <div class="grid-x grid-margin-x align-justify">
+              <div class="news__img medium-10"></div>
+              <div class="clearfix"></div>
+              <div class="medium-2">
+                  <ul class="news__menu" data-magellan>
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                  </ul>
+              </div>
           </div>
-          </div>
-         
         </div>
-
-      </section><!--End News Of The Day-->
+     </div>
+  </div>
+</section><!--End News Of The Day-->
       <!--Book Your Table-->
       <section class="book__table">
         <div class="grid-x align-right">
@@ -653,7 +668,7 @@
           </div>
         </div>
         <div class="cell medium-6 small-12">
-          <div class="upcomig__event">
+          <div class="upcomig__event--content centered__content">
             <div class="title__wrapper align-center">
               <div class="section__about--title">
                 <h2>Upcomig event</h2>
@@ -668,18 +683,18 @@
               </div>
             
               <div class="counter__wrapper">
-                <ul class="counter small-12" data-day="01" data-month="december" data-year="2019">
+                <ul class="counter" data-day="01" data-month="december" data-year="2019">
                   <li>
-                    <div class="number hours">12</div>
-                    <div class="text-date timeRefHours">HOURS</div>
+                    <div class="number hours small-12">12</div>
+                    <div class="text__date small-12">HOURS</div>
                   </li>
                   <li>
-                    <div class="number minutes">21</div>
-                    <div class="text-date timeRefMinutes">MINUTES</div>
+                    <div class="number minutes small-12">21</div>
+                    <div class="text__date small-12">MINUTES</div>
                   </li>
                   <li>
-                    <div class="number seconds">52</div>
-                    <div class="text-date timeRefSeconds">SECONDS</div>
+                    <div class="number seconds small-12">52</div>
+                    <div class="text__date small-12">SECONDS</div>
                   </li>
                 </ul>
               </div>
@@ -759,6 +774,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="footer__bottom" style="padding-top:2rem;">
+        <div class="grid-x align-justify" style="border-top:1px solid gray;">
+          <div class="cell medium-3 copyright">© Designed by GAMBA.</div>
+          <div class="cell medium-3 header__top--social">
+              <ul>
+                  <li><i class="fa fa-facebook" title="Facebook"></i></li>
+                  <li><i class="fa fa-twitter" title="Twitter"></i></li>
+                  <li><i class="fa fa-pinterest-p"></i></li>
+                  <li><i class="fa fa-youtube"></i></li>
+                  <li><i class="fa fa-instagram"></i></li>
+                </ul>
+          </div>
+        </div>
+        <div class="grid-x align-right scrollup">
+            <a href="#top"><i class="fa fa-angle-up"></i></a>
         </div>
       </div>
     </div>
